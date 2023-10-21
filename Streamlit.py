@@ -69,7 +69,7 @@ loan_grade = st.sidebar.selectbox("Loan Grade", ('A', 'B', 'C', 'D', 'E', 'F', '
 loan_amnt = st.sidebar.number_input('Loan Amount', min_value=0, max_value=50, value=5)
 loan_int_rate = st.sidebar.number_input('Loan Interest Rate', min_value=0, max_value=50, value=0)
 loan_percent_income = st.sidebar.number_input('Number of Real Estate Loans or Lines', min_value=0, max_value=1, value=0)
-cb_person_default_on_file = st..sidebarselectbox("Default History", ('N', 'Y'))
+cb_person_default_on_file = st.sidebar.selectbox("Default History", ('N', 'Y'))
 cb_person_cred_hist_length = st.sidebar.number_input('Number of Dependents', min_value=0, max_value=50, value=1)
 
 # Create a button to trigger prediction
