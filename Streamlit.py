@@ -61,14 +61,14 @@ st.title('Credit Risk Probability Calculator')
 # Add input widgets for user input
 st.sidebar.header('Input Features')
 
-person_income = st.sidebar.number_input('Monthly Income', min_value=0.0, value=5000.0, step=100.0)
+person_income = st.sidebar.number_input('Monthly Income', min_value=0.0, value=5000, step=100)
 person_home_ownership = st.sidebar.selectbox("Home Ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
 person_emp_length = st.sidebar.number_input('Employment Period', min_value=0, max_value=150, value=10)
 loan_intent = st.sidebar.selectbox("Loan Intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
 loan_grade = st.sidebar.selectbox("Loan Grade", ('A', 'B', 'C', 'D', 'E', 'F', 'G'))
 loan_amnt = st.sidebar.number_input('Loan Amount', min_value=500, value=10000)
 loan_int_rate = st.sidebar.number_input('Loan Interest Rate', min_value=0, max_value=50, value=15)
-loan_percent_income = st.sidebar.number_input('percent Loan/Income', min_value=0, max_value=1, value=0.17)
+loan_percent_income = st.sidebar.number_input('percent Loan/Income', min_value=0, max_value=1, value=0)
 cb_person_default_on_file = st.sidebar.selectbox("Default History", ('N', 'Y'))
 cb_person_cred_hist_length = st.sidebar.number_input('Credit history', min_value=0, max_value=50, value=6)
 
