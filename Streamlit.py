@@ -68,7 +68,7 @@ loan_intent = st.sidebar.selectbox("Loan Intent", ('DEBTCONSOLIDATION', 'EDUCATI
 loan_grade = st.sidebar.selectbox("Loan Grade", ('A', 'B', 'C', 'D', 'E', 'F', 'G'))
 loan_amnt = st.sidebar.number_input('Loan Amount', min_value=500, value=10000)
 loan_int_rate = st.sidebar.number_input('Loan Interest Rate', min_value=0, max_value=50, value=15)
-loan_percent_income = st.sidebar.number_input('percent LoanIncome', min_value=0, max_value=1, value=0.3, step=0.01)
+loan_percent_income = st.sidebar.number_input('percent LoanIncome', min_value=0, max_value=1)
 cb_person_default_on_file = st.sidebar.selectbox("Default History", ('N', 'Y'))
 cb_person_cred_hist_length = st.sidebar.number_input('Credit history', min_value=0, max_value=50, value=6)
 
