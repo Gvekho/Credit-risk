@@ -62,14 +62,14 @@ st.title('Credit Risk Probability Calculator')
 st.sidebar.header('Input Features')
 
 person_income = st.sidebar.number_input('Monthly Income', min_value=0.0, value=5000.0, step=100.0)
-person_home_ownership = st.selectbox("Home Ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
+person_home_ownership = st.sidebar.selectbox("Home Ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
 person_emp_length = st.sidebar.number_input('Number of Times 30-59 Days Past Due Not Worse', min_value=0, max_value=150, value=0)
-loan_intent = st.selectbox("Loan Intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
-loan_grade = st.selectbox("Loan Grade", ('A', 'B', 'C', 'D', 'E', 'F', 'G'))
+loan_intent = st.sidebar.selectbox("Loan Intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
+loan_grade = st.sidebar.selectbox("Loan Grade", ('A', 'B', 'C', 'D', 'E', 'F', 'G'))
 loan_amnt = st.sidebar.number_input('Loan Amount', min_value=0, max_value=50, value=5)
 loan_int_rate = st.sidebar.number_input('Loan Interest Rate', min_value=0, max_value=50, value=0)
 loan_percent_income = st.sidebar.number_input('Number of Real Estate Loans or Lines', min_value=0, max_value=1, value=0)
-cb_person_default_on_file = st.selectbox("Default History", ('N', 'Y'))
+cb_person_default_on_file = st..sidebarselectbox("Default History", ('N', 'Y'))
 cb_person_cred_hist_length = st.sidebar.number_input('Number of Dependents', min_value=0, max_value=50, value=1)
 
 # Create a button to trigger prediction
