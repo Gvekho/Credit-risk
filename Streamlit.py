@@ -61,7 +61,7 @@ st.title('Credit Risk Probability Calculator')
 # Add input widgets for user input
 st.sidebar.header('Input Features')
 
-person_income = st.sidebar.number_input('Monthly Income', min_value=0.0, value=5000, step=100)
+person_income = st.sidebar.number_input('Monthly Income', min_value=0.0, value=5000, step=100.0)
 person_home_ownership = st.sidebar.selectbox("Home Ownership", ('MORTGAGE', 'OTHER', 'OWN', 'RENT'))
 person_emp_length = st.sidebar.number_input('Employment Period', min_value=0, max_value=150, value=10)
 loan_intent = st.sidebar.selectbox("Loan Intent", ('DEBTCONSOLIDATION', 'EDUCATION', 'HOMEIMPROVEMENT', 'MEDICAL', 'PERSONAL', 'VENTURE'))
